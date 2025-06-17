@@ -41,6 +41,25 @@ Create the composer.json file as follows:
     }
 }
 ```
+or (if dev stability level is acceptable)
+```json
+{
+    "require-dev": {
+        "phalcon/devtools": "5.*"
+    }
+}
+```
+and
+
+(Windows) create in any directory listed in your %PATH% the file phalcon.cmd with contents
+```cmd
+vendor/bin/phalcon.bat %*
+```
+(Linux) add to ~/.bash_profile or ~/.bashrc
+(MacOS) add to ~/.zprofile or ~/.zrc
+```bash
+alias phalcon=vendor/bin/phalcon
+```
 
 If you are still using Phalcon 3.4.x, create a `composer.json` with the following instead:
 
